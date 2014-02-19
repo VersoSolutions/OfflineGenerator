@@ -1,0 +1,35 @@
+{
+  "name": "offlinegenerator",
+  "title": "OfflineGenerator",
+  "description": "Tool to create Verso Cards offline",
+  "version": "0.1.0",
+  "homepage": "http://github.com/VersoSolutions/OfflineGenerator",
+  "author": {
+    "name": "Verso Solutions LLC",
+    "url": "http://www.versocards.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/VersoSolutions/OfflineGenerator.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "wallet"
+  ],
+  "bugs": {
+    "url": "http://github.com/VersoSolutions/OfflineGenerator/issues"
+  },
+  "license": {
+    "name": "GPL v3",
+    "url": "http://github.com/VersoSolutions/OfflineGenerator/blob/master/LICENSE"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-preprocess": "~4.0.0"
+  },
+  "scripts": {
+    "build": "grunt"
+  }
+}

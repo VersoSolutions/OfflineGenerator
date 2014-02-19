@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Verso Cards - Offline Generator</title>
+    <style>
+      <!-- @include index.css -->
+    </style>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      <!-- @include ../vendor/crypto-js/core.js -->
+      <!-- @include ../vendor/crypto-js/x64-core.js -->
+      <!-- @include ../vendor/crypto-js/cipher-core.js -->
+      <!-- @include ../vendor/crypto-js/hmac.js -->
+      <!-- @include ../vendor/crypto-js/aes.js -->
+      <!-- @include ../vendor/crypto-js/ripemd160.js -->
+      <!-- @include ../vendor/crypto-js/sha256.js -->
+      <!-- @include ../vendor/crypto-js/sha512.js -->
+      <!-- @include ../vendor/crypto-js/format-hex.js -->
+      <!-- @include ../vendor/crypto-js/enc-base64.js -->
+      <!-- @include ../vendor/crypto-js/mode-ctr.js -->
+      <!-- @include ../vendor/crypto-js/pad-nopadding.js -->
+      <!-- @include ../vendor/jsbn/jsbn.js -->
+      <!-- @include ../vendor/jsbn/jsbn2.js -->
+      <!-- @include ../vendor/jsbn/prng4.js -->
+      <!-- @include ../vendor/jsbn/rng.js -->
+      <!-- @include ../vendor/jsbn/rsa.js -->
+      <!-- @include ../vendor/jsbn/ec.js -->
+      <!-- @include ../vendor/jsbn/sec.js -->
+      <!-- @include ../vendor/crypto-js/core.js -->
+      <!-- @include ../vendor/sjcl.min.js -->
+      <!-- @include ../vendor/secrets.min.js -->
+      <!-- @include ../vendor/jquery-1.10.2.min.js -->
+      <!-- @include ../vendor/bitcoinlib.min.js -->
+      <!-- @include ../vendor/versolib.min.js -->
+      <!-- @include ../dist/offline.js -->
+    </script>
+
+    <h1>Verso Cards - Offline Generator</h1>
+
+    <h2>1. Choose your cards</h2>
+
+    <p>Add all the cards you wish to order.</p>
+
+    <form id="cardData">
+      <div>
+        <label for="version">Card Type</label>
+        <select id="version">
+          <option value="0" selected>Verso Silver</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="accountName">Account Name</label>
+        <input type="text" id="accountName" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div>
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" id="passwordConfirm" />
+      </div>
+
+      <div class="buttons">
+        <button id="saveCard">Save</button>
+        <button id="cancelCard">Cancel</button>
+      </div>
+
+      <div class="error">
+        <p>There was a problem with the data you entered:</p>
+        <ul id="errorMessages"></ul>
+      </div>
+    </form>
+
+    <p>Here are the cards that you have ordered so far:</p>
+
+    <table id="cards">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Options</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+
+    <h2>2. Export your order</h2>
+
+    <p>Copy the content of the text field below and import it on the order page of our website.</p>
+
+    <textarea id="orderData"></textarea>
+
+  </body>
+</html>
