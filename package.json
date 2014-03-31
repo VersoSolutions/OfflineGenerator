@@ -2,7 +2,7 @@
   "name": "offlinegenerator",
   "title": "OfflineGenerator",
   "description": "Tool to create Verso Cards offline",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://github.com/VersoSolutions/OfflineGenerator",
   "author": {
     "name": "Verso Solutions LLC",
